@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/weather-app-test-task/static/css/main.407d7fbf.css",
+    "main.js": "/weather-app-test-task/static/js/main.26a87143.js",
+    "static/media/dubai.png": "/weather-app-test-task/static/media/dubai.419cce57d0bd1e5079c8.png",
+    "static/media/new-york.png": "/weather-app-test-task/static/media/new-york.fe0df4ae04735ece2c8c.png",
+    "static/media/paris.png": "/weather-app-test-task/static/media/paris.3fddfd2b633c8a947e8b.png",
+    "static/media/background-day.png": "/weather-app-test-task/static/media/background-day.30ebf0295297a82bab88.png",
+    "static/media/london.png": "/weather-app-test-task/static/media/london.31cfec0f4d093aa3a8da.png",
+    "static/media/background-night.png": "/weather-app-test-task/static/media/background-night.cd41622a03058df5c9a7.png",
+    "static/media/loupe.svg": "/weather-app-test-task/static/media/loupe.d0ca7e6c3d3a304b3d1311977ac8de57.svg",
+    "static/media/arrow-down.svg": "/weather-app-test-task/static/media/arrow-down.801c49a7f00f69d446e43821ba8f5b8b.svg",
+    "index.html": "/weather-app-test-task/index.html",
+    "main.407d7fbf.css.map": "/weather-app-test-task/static/css/main.407d7fbf.css.map",
+    "main.26a87143.js.map": "/weather-app-test-task/static/js/main.26a87143.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.407d7fbf.css",
+    "static/js/main.26a87143.js"
+  ]
+}
