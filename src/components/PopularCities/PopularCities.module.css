@@ -1,0 +1,80 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-inline: 16px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding-block: 40px;
+}
+@media (min-width: 640px) {
+  .container {
+    padding-inline: 24px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    padding-inline: 120px;
+  }
+}
+
+.title {
+  font-size: 1.75rem;
+  text-align: center;
+}
+@media (min-width: 640px) {
+  .title {
+    font-size: 2rem;
+  }
+}
+
+.cityCards {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.cityCards .card {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  width: 100%;
+  height: 220px;
+  background: no-repeat center/cover;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+@media (min-width: 640px) {
+  .cityCards .card {
+    width: 270px;
+  }
+}
+@media (min-width: 1024px) {
+  .cityCards .card {
+    width: 220px;
+  }
+}
+.cityCards .card:hover {
+  transform: scale(102%);
+}
+.cityCards .card:hover .cityName {
+  transform: scale(95%);
+  background-color: #2a344b;
+  color: #fff;
+}
+.cityCards .card .cityName {
+  align-self: end;
+  width: 100%;
+  height: 36px;
+  padding-block: 5px;
+  border-radius: 30px;
+  line-height: 24px;
+  text-align: center;
+  background-color: #fff;
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+/*# sourceMappingURL=PopularCities.module.css.map */

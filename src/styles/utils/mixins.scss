@@ -1,0 +1,19 @@
+@import './breakpoints';
+
+@mixin contentPaddingInline {
+  padding-inline: 16px;
+
+  @include onTablet {
+    padding-inline: 24px;
+  }
+
+  @include onDesktop {
+    padding-inline: 120px;
+  }
+}
+
+@mixin flexColumn($gap: 10px) {
+  display: flex;
+  flex-direction: column;
+  gap: $gap;
+}

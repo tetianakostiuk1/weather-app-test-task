@@ -1,0 +1,9 @@
+.footer {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fafafa;
+}
+
+/*# sourceMappingURL=Footer.module.css.map */

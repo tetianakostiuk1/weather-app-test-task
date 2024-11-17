@@ -1,0 +1,21 @@
+.bannerBackground {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 430px;
+  width: 100vw;
+  padding: 40px;
+
+  background: no-repeat center/cover;
+
+  &.day {
+    background-image: url('../../assets/images/background-day.png');
+  }
+
+  &.night {
+    background-image: url('../../assets/images/background-night.png');
+  }
+}

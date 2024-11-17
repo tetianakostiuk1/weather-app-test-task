@@ -1,0 +1,86 @@
+.inputWrapper {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  transition: transform 0.3s ease-in-out;
+}
+.inputWrapper:focus-within {
+  transform: scale(104%);
+}
+.inputWrapper:focus-within .iconWrapper {
+  background-color: #586efc;
+}
+
+.input {
+  height: 60px;
+  width: 100%;
+  padding: 10px 30px 10px 30px;
+  border-radius: 30px;
+}
+.input::placeholder {
+  color: #9E9E9E;
+}
+
+.iconWrapper {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  border-radius: 30px;
+  transition: background-color 0.3s ease-in-out;
+}
+.iconWrapper.day {
+  background-color: #90caf9;
+}
+.iconWrapper.night {
+  background-color: #2a344b;
+}
+.iconWrapper .icon {
+  width: 16px;
+  height: 16px;
+}
+
+.suggestions {
+  position: absolute;
+  top: 110%;
+  left: 0;
+  width: 100%;
+  max-height: 200px;
+  padding: 20px;
+  border-radius: 30px;
+  background-color: white;
+  overflow: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.suggestionsItem {
+  padding: 8px;
+  cursor: pointer;
+  line-height: 24px;
+  border-radius: 30px;
+}
+.suggestionsItem:hover {
+  color: #fff;
+}
+.suggestionsItem.day:hover {
+  background-color: #90caf9;
+}
+.suggestionsItem.night:hover {
+  background-color: #2a344b;
+}
+
+.noSuggestions {
+  width: 100%;
+  line-height: 24px;
+  text-align: center;
+  color: #9E9E9E;
+  border-radius: 30px;
+}
+
+/*# sourceMappingURL=Search.module.css.map */

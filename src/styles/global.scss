@@ -1,0 +1,20 @@
+@import 'utils/reset';
+@import 'utils/normalize';
+@import 'utils/mixins';
+
+:root {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 1rem;
+
+  @include flexColumn(0px);
+  align-items: center;
+  width: 100%;
+
+  overflow-x: hidden;
+}

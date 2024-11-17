@@ -1,0 +1,127 @@
+@import "../../../src/styles/utils/variables";
+@import "../../../src/styles/utils/mixins";
+
+.container {
+  width: 100%;
+  max-width: 600px;
+
+  padding: 20px;
+
+  border-radius: 30px;
+  border: 1px solid $main-powderblue;
+
+  background-color: rgba(255, 255, 255, 0.85);
+  transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+
+  &:hover {
+    border-color: $main-nightblue;
+    background-color: #fff;
+  }
+}
+
+.weatherInfo {
+  @include onTablet {
+    display: flex;
+    gap: 10px;
+  }
+
+  justify-content: space-between;
+
+  margin-bottom: 20px;
+
+  & .weatherDetails {
+    display: flex;
+    gap: 10px;
+    justify-content: start;
+
+    @include onTablet {
+      justify-content: space-between;
+    }
+
+    padding: 3px;
+
+    .details {
+      @include flexColumn();
+      justify-content: space-between;
+
+      padding: 3px;
+    }
+
+    .icon {
+      width: 100px;
+      height: 100px;
+      border-radius: 30px;
+      background-color: #fff;
+    }
+
+    .description {
+      color: $main-gray;
+    }
+  }
+
+  & .otherDetails {
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+
+    @include onTablet {
+      @include flexColumn();
+      justify-content: start;
+      margin-top: 0;
+    }
+
+    padding: 3px;
+
+    .city {
+      font-size: 1.125rem;
+      font-weight: bolder;
+    }
+
+    .date {
+      color: $main-gray;
+      text-align: end;
+
+      @include onTablet {
+        text-align: start;
+      }
+    }
+  }
+}
+
+.minMaxTemperature {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+
+  margin-top: 20px;
+
+  .min, .max {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 1;
+
+    justify-content: center;
+    align-items: center;
+  }
+
+  .temperatureTitle {
+    color: $main-gray;
+  }
+}
+
+.verticalLine {
+  width: 0.5px;
+  height: 60px;
+  background-color: $main-powderblue;
+}
+
+.horizontalLine {
+  height: 1px;
+  background-color: $main-powderblue;
+}
+
+.temperature {
+  font-size: 1.125rem;
+  font-weight: bolder;
+}
